@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+body {
+    scroll-behavior: smooth;
+}
+
+.mainImage {
+    margin-top: 15%;
+    margin-left: 12%;
+    text-align: left;
+    position: relative;
+    font-size: 44px;
+    font-family: Source Code Pro;
+}
+
+.mainImage p {
+    margin-top: -4%;
+    font-size: 22px;
+}
+
+.mainImage p i {
+    color: orange;
+    font-style: normal;
+}
+
+@media only screen and (min-screen-width: 200px) and (max-screen-width: 400px) {
+    .mainImage h1.mainTitle {
+        font-size: 28px;
+    }
+}
