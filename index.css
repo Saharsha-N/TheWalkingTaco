@@ -14,6 +14,22 @@ body {
     font-family: Source Code Pro;
     color: white;
     z-index: 3;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 700ms;
+}
+
+.mainTitle:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.mainTitle i {
+    font-style: normal;
+}
+
+.mainTitle:hover i {
+    color: orange;
+    font-style: normal;
+    transition: color 500ms ease-in-out;
 }
 
 .subTitle {
@@ -59,6 +75,7 @@ body {
 }
 
 .exp {
+    padding-top: 0.5vh;
     margin-top: -8vh;
     min-height: 100%;
     background-color: white/*rgb(253, 226, 168)*/;
@@ -74,6 +91,18 @@ body {
     font-family: Source Code Pro;
 }
 
+.exp h2 i {
+    font-style: normal;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 500ms ease-in-out;
+}
+
+.exp h2 i:hover {
+    color: orange;
+    background-color: black;
+    transition: color 1.3s ease-in-out, background-color 800ms ease-in-out;
+}
+
 .exp .flexbox {
     margin-top: -1vh;
     display: flex;
@@ -83,7 +112,7 @@ body {
 
 .exp .flexbox div {
     flex: 1;
-    border: 1px solid black;
+    border: 0.5px solid black;
     padding: 1vw;
     margin: 1vw;
 }
