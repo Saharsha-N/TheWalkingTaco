@@ -27,9 +27,9 @@ body {
 }
 
 .mainTitle:hover i {
-    color: orange;
+    color: rgb(238, 202, 136);
     font-style: normal;
-    transition: color 500ms ease-in-out;
+    transition: color 700ms ease-in-out;
 }
 
 .subTitle {
@@ -74,21 +74,31 @@ body {
     background-size: cover;
 }
 
+.divider {
+    position: relative;
+    min-height: 100%;
+    background: linear-gradient(2deg, yellow, red);
+    z-index: 4;
+    height: 2vh;
+    bottom: 8vh;
+}
+
 .exp {
     padding-top: 0.5vh;
-    margin-top: -8vh;
+    margin-top: -10vh;
     min-height: 100%;
     background-color: white/*rgb(253, 226, 168)*/;
 }
 
 .exp h2 {
-    margin-top: 6vh;
+    margin-top: 8vh;
     padding: 2vh;   
     padding-bottom: -0.5vh;
     color: black;
     font-size: 3.5vw;
     text-align: center;
     font-family: Source Code Pro;
+    min-height: 15vh;
 }
 
 .exp h2 i {
@@ -111,15 +121,35 @@ body {
 }
 
 .exp .flexbox div {
+    bottom: 5vh;
+    position: relative;
     flex: 1;
-    border: 0.5px solid black;
+    box-shadow: -0.35vw 0.35vw 0vw 0vw orange;
     padding: 1vw;
-    margin: 1vw;
+    margin: 1.5vw;
+    vertical-align: top;
+}
+
+.exp .flexbox div p {
+    margin: 2vh 2vh;
+}
+
+.exp .flexbox div button {
+    margin: 0vh 2vh;
+    margin-bottom: 2vh;
+    background: transparent;
+    border: none;
+    border-left: 0.25vh solid orange;
+    border-bottom: 0.25vh solid orange;
+    padding: 0.5vh;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 0.75vw;
 }
 
 .exp .flexbox p {
     font-family: Open Sans;
-    font-size: 1vw;
+    font-size: 1.25vw;
 }
 
 .exp .flexbox p i {
