@@ -57,7 +57,31 @@ body {
     margin-top: -34vh;
     margin-bottom: -20vh;*/
     /* The image used */
-    background-image: url('https://media.istockphoto.com/photos/mexican-tacos-with-beef-vegetables-and-salsa-tacos-al-pastor-on-on-picture-id1090713192?k=20&m=1090713192&s=612x612&w=0&h=kSfBgt5vtg-4TDe0S2AIsjunZxzPed_fOeGfHIGJGe8=');
+    background-image: url('tacotitlefinal.png');
+    /*-webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);*/
+
+    /* Full height */
+    width: 100%;
+    height: 150vh;
+    z-index: -1;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    
+    /*
+    margin-top: -34vh;
+    margin-bottom: -20vh;*/
+    /* The image used */
+    background-image: url('https://cdn1.vectorstock.com/i/1000x1000/61/55/mexican-taco-delivery-icon-vector-31816155.jpg');
     /*-webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -66,12 +90,44 @@ body {
     /* Full height */
     height: 150vh;
     z-index: -1;
-  
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.thumbnail {
+    /* Full height */
+    height: 60vh;
+    width: auto;
+    top: 17vh;
+    left: 20vh;
+    position: absolute;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thumbnail {
+    animation: height 1s forwards;
+    animation-delay: 700ms;
+}
+
+@keyframes height {
+    from {height: 60vh;}
+    to {
+        height: 65vh; 
+        position: relative;
+        width: auto;
+        display: block;
+        z-index: 999;
+        left: 17.5vh;
+        top: 15vh;
+    }
 }
 
 .divider {
@@ -81,6 +137,14 @@ body {
     z-index: 4;
     height: 2vh;
     bottom: 8vh;
+}
+
+.divider1 {
+    position: relative;
+    min-height: 100%;
+    background: linear-gradient(2deg, yellow, red);
+    z-index: 4;
+    height: 2vh;
 }
 
 .exp {
@@ -118,6 +182,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 4vh;
 }
 
 .exp .flexbox div {
@@ -128,6 +193,12 @@ body {
     padding: 1vw;
     margin: 1.5vw;
     vertical-align: top;
+}
+
+.exp .flexbox .image {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .exp .flexbox div p {
@@ -155,6 +226,14 @@ body {
 .exp .flexbox p i {
     font-weight: bold;
     font-style: normal;    
+}
+
+.exp .flexbox img {
+    position: relative;
+    width: 16vw;
+    height: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (min-screen-width: 200px) and (max-screen-width: 400px) {
