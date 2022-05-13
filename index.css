@@ -2,7 +2,7 @@
 
 body {
     scroll-behavior: smooth;
-    background-color: black;
+    background: linear-gradient(to right, rgb(240, 144, 54), rgb(247, 215, 147));
 }
 
 .mainTitle {
@@ -35,19 +35,18 @@ body {
 .subTitle {
     font-size: 1.5vw;
     color: white;
-    z-index: 3;
+    z-index: 999;
 
-    margin-top: 53vh;
-    margin-left: 12%;
+    top: 85vh;
+    margin-left: 11%;
     text-align: left;
     position: absolute;
     font-family: Source Code Pro;   
-    background-color: black;
     padding: 1vh 1vh;
 }
 
 .subTitle i {
-    color: orange;
+    color: black;
     font-style: normal;
 }
 
@@ -88,8 +87,15 @@ body {
     transform: scaleX(-1);*/
 
     /* Full height */
-    height: 150vh;
+    height: 175vh;
     z-index: -1;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    bottom: 6vh;
+    position: relative;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -102,7 +108,7 @@ body {
     /* Full height */
     height: 60vh;
     width: auto;
-    top: 17vh;
+    top: 14vh;
     left: 20vh;
     position: absolute;
 
@@ -113,7 +119,7 @@ body {
 }
 
 .thumbnail {
-    animation: height 1s forwards;
+    animation: height 2s forwards;
     animation-delay: 700ms;
 }
 
@@ -124,9 +130,9 @@ body {
         position: relative;
         width: auto;
         display: block;
-        z-index: 999;
+        z-index: 997;
         left: 17.5vh;
-        top: 15vh;
+        top: 13vh;
     }
 }
 
@@ -234,6 +240,28 @@ body {
     height: auto;
     align-items: center;
     justify-content: center;
+}
+
+.parallax1 .make {
+    top: 60vh;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+.parallax1 .make h2 {
+    position: relative;
+    padding: 2vh;   
+    padding-bottom: -0.5vh;
+    color: rgb(224, 124, 57);
+    font-size: 3.5vw;
+    text-align: center;
+    font-family: Source Code Pro;
+    min-height: 15vh;
 }
 
 @media only screen and (min-screen-width: 200px) and (max-screen-width: 400px) {
