@@ -224,6 +224,14 @@ body {
     font-family: Open Sans;
     font-weight: bold;
     font-size: 0.75vw;
+    border-radius: 0.25vw;
+}
+
+.exp .flexbox div button:hover {
+    background: transparent;
+    box-shadow: -0.75vh 0.75vh 1vh rgba(255, 115, 0, 0.486);
+    transform: translateY(-0.5vh);
+    transition: 0.5s ease-in-out;
 }
 
 .exp .flexbox p {
@@ -298,12 +306,36 @@ body {
 .parallax1 .make .makeContent img {
     padding: 1vw;
     max-width: 40vw;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
 }
 
 .parallax1 .make .makeContent i {
     font-style: normal;
     left: 15vw;
     color: transparent;
+}
+
+.parallax1 .make .makeContent p button {
+    margin: 0vh 2vh;
+    margin-bottom: 2vh;
+    background: transparent;
+    border: none;
+    border-left: 0.25vh solid orange;
+    border-bottom: 0.25vh solid orange;
+    padding: 0.5vh;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 0.75vw;
+    border-radius: 0.25vw;
+}
+
+.parallax1 .make .makeContent p button:hover {
+    background: transparent;
+    box-shadow: -0.75vh 0.75vh 1vh rgba(255, 115, 0, 0.486);
+    transform: translateY(-0.5vh);
+    transition: 0.5s ease-in-out;
 }
 
 @media only screen and (min-screen-width: 200px) and (max-screen-width: 400px) {

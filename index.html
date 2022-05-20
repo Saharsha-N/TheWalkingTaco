@@ -26,8 +26,9 @@
             <div data-aos="fade-right" data-aos-duration="750" data-aos-delay="300" class = "flex desc">
                 <p><i>The Walking Taco!&copy;</i> is a revolutionary new toy, designed and built to feel, smell, and look like a <b>real</b> taco.
                 Made by Melissa & Doug&copy; toy design experts, who are in 9th grade, this invigorating toy is sure to keep your children happy, 
-                curious, and captivated<span id="dots">...</span><span id="more" style="display: none; transition: none;">. This is the more statement 
-                this is just going to be used for testing to see if the code and logic for this statement will work!
+                curious, and captivated<span id="dots">...</span><span id="more" style="display: none; transition: none;"> as they adventure into adolescence 
+                and later stages of childhood. The sleek yet realistic design of the taco makes fun and engaging enough for the children to play with, 
+                while keeping you happy that you bought a good-looking toy. 
                 </span></p>
                 <button onclick="myFunction()" id="myBtn">Read More</button>
                 <script>
@@ -66,8 +67,43 @@
                     <i>____</i>- Wheels
                     <br>
                     <i>____</i>- Sombrero
+                    <br>
+                    <br>
+                    This simplistic design ensures that <span id="dots1">...</span><span id="more1" style="display: none; transition: none;"> even if the toy breaks, there is no choking hazard created by the broken toy. 
+                    In the unlikely event that a part of the toy breaks, such as the wheels or sombrero, our <b>insightful</b> usage of a <b>dowel rod</b> 
+                    allows fixing to be a piece of cake. If something breaks, just:
+                    <br>
+                    <i>____</i>1. Ensure none of the pieces have splintered or been damaged
+                    <br>
+                    <i>____</i>2. Line part of dowel rod that contacts the broken piece with <b>wood-grade super glue</b>
+                    <br>
+                    <i>____</i>3. Place and hold two pieces together, allowing time for glue to cure
+                    <br>
+                    <i>____</i>4. <b>Voila!</b> Your toy is now fixed!
+                    <br>
+                    </span>
+                    <button onclick="window.location.href='amazon.com'" id="myBtn1">Read More</button>
                 </p>
                 <img src="https://media.istockphoto.com/photos/mexican-tacos-picture-id478372509?k=20&m=478372509&s=612x612&w=0&h=rAEftWAZzGdRH6KIKOgE4W-GjKJ61Eixdezxt0pbdRI=" alt="">
+                <script>
+                    function Function1() {
+                        var dots1 = document.getElementById("dots1");
+                        var moreText1 = document.getElementById("more1");
+                        var btnText1 = document.getElementById("myBtn1");
+
+                        if (dots1.style.display === "none") {
+                            dots1.style.display = "inline";
+                            btnText1.innerHTML = "Read More";
+                            moreText1.style.display = "none";
+                            moreText1.style.display = "none";
+                        } else {
+                            dots1.style.display = "none";
+                            btnText1.innerHTML = "Read Less";
+                            moreText1.style.display = "inline";
+                            moreText1.style.transition = "0.3s ease-in-out";
+                        }
+                    }
+                </script>
             </div>
         </div>  
     </div>
@@ -77,5 +113,3 @@
     </script>
 </body>
 </html>
-
-css:anim
