@@ -38,11 +38,12 @@ body {
     z-index: 999;
 
     top: 85vh;
-    margin-left: 11%;
+    margin-left: 9%;
     text-align: left;
     position: absolute;
     font-family: Source Code Pro;   
     padding: 1vh 1vh;
+    animation: fadeIn 2.7s ease-in;
 }
 
 .subTitle i {
@@ -50,6 +51,10 @@ body {
     font-style: normal;
 }
 
+@keyframes fadeIn {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
 
 .parallax {
     /*
@@ -90,10 +95,7 @@ body {
     height: 175vh;
     z-index: -1;
 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+    display: flex;
     bottom: 6vh;
     position: relative;
 
@@ -244,24 +246,64 @@ body {
 
 .parallax1 .make {
     top: 60vh;
+    margin-left: 12vw;
+    margin-right: 12vw;
     width: fit-content;
-    height: fit-content;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
     text-align: center;
     background-color: white;
+    border-radius: 0.9vw;
+    border: 1px solid orange;
 }
 
 .parallax1 .make h2 {
-    position: relative;
-    padding: 2vh;   
-    padding-bottom: -0.5vh;
+    padding-top: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;   
+    margin-bottom: -2vh;
     color: rgb(224, 124, 57);
     font-size: 3.5vw;
     text-align: center;
     font-family: Source Code Pro;
     min-height: 15vh;
+}
+
+.parallax1 .make h2 i {
+    font-style: normal;
+}
+
+.parallax1 .make h2 i:hover {
+    color: orange;
+    background-color: black;
+    transition: color 1.3s ease-in-out, background-color 800ms ease-in-out;
+}
+
+.parallax1 .make .makeContent {
+    display: flex;
+}
+
+.parallax1 .make .makeContent p {
+    font-family: Open Sans;
+    font-size: 1.35vw;
+    margin: 4vw;
+    float: left;
+    max-width: 40vw;
+    text-align: left;
+}
+
+.parallax1 .make .makeContent * {
+    flex: 1;
+}
+
+.parallax1 .make .makeContent img {
+    padding: 1vw;
+    max-width: 40vw;
+}
+
+.parallax1 .make .makeContent i {
+    font-style: normal;
+    left: 15vw;
+    color: transparent;
 }
 
 @media only screen and (min-screen-width: 200px) and (max-screen-width: 400px) {

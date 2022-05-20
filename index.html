@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="parallax">
@@ -19,10 +20,10 @@
     </div>
     <div class="divider"></div>
     <div class="exp">
-        <h2>So...What is the <i>Walking Taco?</i></h2>
+        <h2 data-aos="fade-right" data-aos-duration="750">So...What is the <i>Walking Taco?</i></h2>
         <div class="flexbox">
-            <div class = "flex image"><img src="mexican-taco-delivery-icon-vector-31816155.jpg" alt=""></div>
-            <div class = "flex desc">
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-delay="300" class = "flex image"><img src="mexican-taco-delivery-icon-vector-31816155.jpg" alt=""></div>
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-delay="300" class = "flex desc">
                 <p><i>The Walking Taco!&copy;</i> is a revolutionary new toy, designed and built to feel, smell, and look like a <b>real</b> taco.
                 Made by Melissa & Doug&copy; toy design experts, who are in 9th grade, this invigorating toy is sure to keep your children happy, 
                 curious, and captivated<span id="dots">...</span><span id="more" style="display: none; transition: none;">. This is the more statement 
@@ -52,10 +53,27 @@
         </div>
     </div>
     <div class="divider1"></div>
-    <div class="parallax1">
-        <div class="make">
-            <h2>So...What is it <i>Made Of?</i></h2>
-        </div>
+    <div class="parallax1" > 
+        <div class="make" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
+            <h2 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1125">So...What is it <i>Made Of?</i></h2>
+            <div class="makeContent" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1250">
+                <p>
+                    The taco car is made exclusively out of wood and <b>non-toxic</b> paint, ensuring a safe experience for your child
+                    and preventing you from getting a headache. It is composed of only <b>3 different</b> parts:
+                    <br>
+                    <i>____</i>- Taco Body/Shell
+                    <br>
+                    <i>____</i>- Wheels
+                    <br>
+                    <i>____</i>- Sombrero
+                </p>
+                <img src="https://media.istockphoto.com/photos/mexican-tacos-picture-id478372509?k=20&m=478372509&s=612x612&w=0&h=rAEftWAZzGdRH6KIKOgE4W-GjKJ61Eixdezxt0pbdRI=" alt="">
+            </div>
+        </div>  
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
